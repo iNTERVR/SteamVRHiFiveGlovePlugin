@@ -1,0 +1,42 @@
+{
+  "name": "com.intervr.if.vr.glove.plugin.steamvrhifive",
+  "displayName": "iNTERVR Plugin Steam VR HiFive Glove",
+  "description": "Steam VR HiFive Glove Plugin of iNTERVR",
+  "version": "0.1.0",
+  "unity": "2020.1",
+  "keywords": [],
+  "homepage": "https://github.com/iNTERVR/SteamVRHiFiveGlovePlugin#readme",
+  "bugs": {
+    "url": "https://github.com/iNTERVR/SteamVRHiFiveGlovePlugin/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iNTERVR/SteamVRHiFiveGlovePlugin.git#upm"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "iNTERVR",
+    "email": "ckbang7@gmail.com",
+    "url": "https://github.com/iNTERVR"
+  },
+  "dependencies": {
+    "com.intervr.if.vr.glove": "1.2.3",
+    "com.intervr.if.vr.plugin.steam": "1.4.10"
+  },
+  "files": [
+    "*.md",
+    "*.meta",
+    "*.asmdef",
+    "*.xml",
+    "Editor",
+    "Runtime",
+    "Samples~"
+  ],
+  "samples": [
+    {
+      "displayName": "Template",
+      "description": "Tmplate",
+      "path": "Samples~/Template"
+    }
+  ]
+}
