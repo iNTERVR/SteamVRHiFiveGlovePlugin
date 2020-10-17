@@ -8,13 +8,13 @@ using InterVR.IF.VR.Glove.Modules;
 using EcsRx.Entities;
 using EcsRx.Unity.Extensions;
 
-namespace InterVR.IF.VR.Glove.Plugin.SteamVRManus.Modules
+namespace InterVR.IF.VR.Glove.Plugin.SteamVRHiFive.Modules
 {
-    public class IF_VR_Glove_SteamVRManus_GrabStatus : IF_VR_IGrabStatus
+    public class IF_VR_Glove_SteamVRHiFive_GrabStatus : IF_VR_IGrabStatus
     {
         private readonly IF_VR_Glove_IInterface vrGloveInterface;
 
-        public IF_VR_Glove_SteamVRManus_GrabStatus(IF_VR_Glove_IInterface vrGloveInterface)
+        public IF_VR_Glove_SteamVRHiFive_GrabStatus(IF_VR_Glove_IInterface vrGloveInterface)
         {
             this.vrGloveInterface = vrGloveInterface;
         }

@@ -24,9 +24,9 @@ using InterVR.IF.Defines;
 using InterVR.IF.Components;
 using InterVR.IF.VR.Events;
 
-namespace InterVR.IF.VR.Glove.Plugin.SteamVRManus.Systems
+namespace InterVR.IF.VR.Glove.Plugin.SteamVRHiFive.Systems
 {
-    public class IF_VR_Glove_SteamVRManus_HandSystem : ISetupSystem, ITeardownSystem
+    public class IF_VR_Glove_SteamVRHiFive_HandSystem : ISetupSystem, ITeardownSystem
     {
         public IGroup Group => new Group(typeof(IF_VR_Glove_Hand), typeof(ViewComponent));
 
@@ -37,7 +37,7 @@ namespace InterVR.IF.VR.Glove.Plugin.SteamVRManus.Systems
         private readonly IEntityDatabase entityDatabase;
         private readonly IEventSystem eventSystem;
 
-        public IF_VR_Glove_SteamVRManus_HandSystem(IF_IGameObjectTool gameObjectTool,
+        public IF_VR_Glove_SteamVRHiFive_HandSystem(IF_IGameObjectTool gameObjectTool,
             IF_VR_IInterface vrInterface,
             IF_VR_Glove_IInterface vrGloveInterface,
             IEntityDatabase entityDatabase,

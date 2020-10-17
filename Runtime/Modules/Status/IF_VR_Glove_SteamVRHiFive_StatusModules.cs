@@ -2,9 +2,9 @@
 using EcsRx.Infrastructure.Extensions;
 using InterVR.IF.VR.Modules;
 
-namespace InterVR.IF.VR.Glove.Plugin.SteamVRManus.Modules
+namespace InterVR.IF.VR.Glove.Plugin.SteamVRHiFive.Modules
 {
-    public class IF_VR_Glove_SteamVRManus_StatusModules : IDependencyModule
+    public class IF_VR_Glove_SteamVRHiFive_StatusModules : IDependencyModule
     {
         public void Setup(IDependencyContainer container)
         {
@@ -12,7 +12,7 @@ namespace InterVR.IF.VR.Glove.Plugin.SteamVRManus.Modules
             {
                 container.Unbind<IF_VR_IGrabStatus>();
             }
-            container.Bind<IF_VR_IGrabStatus, IF_VR_Glove_SteamVRManus_GrabStatus>();
+            container.Bind<IF_VR_IGrabStatus, IF_VR_Glove_SteamVRHiFive_GrabStatus>();
         }
     }
 }

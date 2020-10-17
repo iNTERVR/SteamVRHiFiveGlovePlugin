@@ -3,9 +3,9 @@ using InterVR.IF.VR.Glove.Modules;
 using UniRx;
 using UnityEngine;
 
-namespace InterVR.IF.VR.Glove.Plugin.SteamVRManus.Modules
+namespace InterVR.IF.VR.Glove.Plugin.SteamVRHiFive.Modules
 {
-    public class IF_VR_Glove_SteamVRManus_Interface : IF_VR_Glove_IInterface
+    public class IF_VR_Glove_SteamVRHiFive_Interface : IF_VR_Glove_IInterface
     {
         public int PlayerNumber
         {
@@ -15,7 +15,7 @@ namespace InterVR.IF.VR.Glove.Plugin.SteamVRManus.Modules
         public FloatReactiveProperty HandYawOffsetLeft { get; private set; }
         public FloatReactiveProperty HandYawOffsetRight { get; private set; }
 
-        public IF_VR_Glove_SteamVRManus_Interface()
+        public IF_VR_Glove_SteamVRHiFive_Interface()
         {
             HandYawOffsetLeft = new FloatReactiveProperty();
             HandYawOffsetRight = new FloatReactiveProperty();
