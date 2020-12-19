@@ -2,7 +2,7 @@
   "name": "com.intervr.if.vr.glove.plugin.steamvrhifive",
   "displayName": "iNTERVR Plugin Steam VR HiFive Glove",
   "description": "Steam VR HiFive Glove Plugin of iNTERVR",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "unity": "2020.1",
   "keywords": [],
   "homepage": "https://github.com/iNTERVR/SteamVRHiFiveGlovePlugin#readme",
