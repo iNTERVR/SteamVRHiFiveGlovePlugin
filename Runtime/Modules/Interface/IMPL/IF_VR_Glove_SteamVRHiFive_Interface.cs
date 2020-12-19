@@ -15,13 +15,15 @@ namespace InterVR.IF.VR.Glove.Plugin.SteamVRHiFive.Modules
         public FloatReactiveProperty HandYawOffsetLeft { get; private set; }
         public FloatReactiveProperty HandYawOffsetRight { get; private set; }
 
-        public IF_VR_Glove_SteamVRHiFive_Interface()
+        public IF_VR_Glove_SteamVRHiFive_Interface(IHI5Interface hI5Interface)
         {
             HandYawOffsetLeft = new FloatReactiveProperty();
             HandYawOffsetRight = new FloatReactiveProperty();
+            this.hI5Interface = hI5Interface;
         }
 
         Transform rootTransform;
+        private readonly IHI5Interface hI5Interface;
 
         public Transform GetRootTransform()
         {
@@ -33,19 +35,22 @@ namespace InterVR.IF.VR.Glove.Plugin.SteamVRHiFive.Modules
             rootTransform = root;
         }
 
+        // 현재 grab 중인지 여부
         public bool GetGrabState(IF_VR_HandType handType)
         {
-            return false;
+            return hI5Interface.IsGrab(handType);
         }
 
+        // 현재 grab 시작 여부
         public bool GetGrabStateDown(IF_VR_HandType handType)
         {
-            return false;
+            return hI5Interface.IsGrab(handType);
         }
 
+        // 현재 grab 끝내기 여부
         public bool GetGrabStateUp(IF_VR_HandType handType)
         {
-            return false;
+            return hI5Interface.IsGrab(handType);
         }
 
         public void Dispose()

@@ -7,9 +7,9 @@ using InterVR.IF.VR.Plugin.Steam.InteractionSystem;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace InterVR.IF.VR.Glove.Plugin.SteamVRManus.Example.Components
+namespace InterVR.IF.VR.Glove.Plugin.SteamVRHiFive.Example.Components
 {
-    public class IF_VR_Glove_SteamVRManus_Example_Interactable : IComponent
+    public class IF_VR_Glove_SteamVRHiFive_Example_Interactable : IComponent
     {
         public TextMesh GeneralText { get; set; }
         public TextMesh HoveringText { get; set; }
@@ -20,7 +20,7 @@ namespace InterVR.IF.VR.Glove.Plugin.SteamVRManus.Example.Components
         public bool LastHovering;
     }
 
-    public class IF_VR_Glove_SteamVRManus_Example_InteractableComponent : RegisterAsEntity
+    public class IF_VR_Glove_SteamVRHiFive_Example_InteractableComponent : RegisterAsEntity
     {
         public TextMesh GeneralText;
         public TextMesh HoveringText;
@@ -31,7 +31,7 @@ namespace InterVR.IF.VR.Glove.Plugin.SteamVRManus.Example.Components
 
         public override void Convert(IEntity entity, IComponent component = null)
         {
-            var c = component == null ? new IF_VR_Glove_SteamVRManus_Example_Interactable() : component as IF_VR_Glove_SteamVRManus_Example_Interactable;
+            var c = component == null ? new IF_VR_Glove_SteamVRHiFive_Example_Interactable() : component as IF_VR_Glove_SteamVRHiFive_Example_Interactable;
 
             c.GeneralText = GeneralText;
             c.HoveringText = HoveringText;

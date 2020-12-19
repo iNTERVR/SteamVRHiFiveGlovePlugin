@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iNTERVR/SteamVRHiFiveGlovePlugin.git#upm"
+    "url": "git+https://github.com/iNTERVR/SteamVRHiFiveGlovePlugin.git"
   },
   "license": "MIT",
   "author": {
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "com.intervr.if.vr.glove": "1.2.3",
-    "com.intervr.if.vr.plugin.steam": "1.4.10"
+    "com.intervr.if.vr.plugin.steam": "1.4.11"
   },
   "files": [
     "*.md",

@@ -21,6 +21,8 @@ namespace InterVR.IF.VR.Glove.Plugin.SteamVRHiFive.Installer
         public class Settings
         {
             public string Name = "IF Steam VR HiFive Glove Plugin Installer";
+            public GameObject Hi5RightHandPrefab;
+            public GameObject Hi5LeftHandPrefab;
         }
     }
 }

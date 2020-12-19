@@ -9,25 +9,25 @@ using EcsRx.Entities;
 using InterVR.IF.VR.Events;
 using EcsRx.Extensions;
 using UniRx;
-using InterVR.IF.VR.Glove.Plugin.SteamVRManus.Example.Components;
+using InterVR.IF.VR.Glove.Plugin.SteamVRHiFive.Example.Components;
 using EcsRx.Unity.Extensions;
 using InterVR.IF.VR.Plugin.Steam.InteractionSystem;
 using UnityEngine;
 using UniRx.Triggers;
 using InterVR.IF.VR.Glove.Modules;
 
-namespace InterVR.IF.VR.Glove.Plugin.SteamVRManus.Example.Systems
+namespace InterVR.IF.VR.Glove.Plugin.SteamVRHiFive.Example.Systems
 {
-    public class IF_VR_Glove_SteamVRManus_Example_InteractableSystem : ISetupSystem, ITeardownSystem
+    public class IF_VR_Glove_SteamVRHiFive_Example_InteractableSystem : ISetupSystem, ITeardownSystem
     {
-        public IGroup Group => new Group(typeof(IF_VR_Interactable), typeof(IF_VR_Glove_SteamVRManus_Example_Interactable));
+        public IGroup Group => new Group(typeof(IF_VR_Interactable), typeof(IF_VR_Glove_SteamVRHiFive_Example_Interactable));
 
         private Dictionary<IEntity, List<IDisposable>> subscriptionsPerEntity = new Dictionary<IEntity, List<IDisposable>>();
         private readonly IEventSystem eventSystem;
         private readonly IEntityDatabase entityDatabase;
         private readonly IF_VR_Glove_IInterface vrGloveInterface;
 
-        public IF_VR_Glove_SteamVRManus_Example_InteractableSystem(IEventSystem eventSystem,
+        public IF_VR_Glove_SteamVRHiFive_Example_InteractableSystem(IEventSystem eventSystem,
             IEntityDatabase entityDatabase,
             IF_VR_Glove_IInterface vrGloveInterface)
         {
@@ -44,7 +44,7 @@ namespace InterVR.IF.VR.Glove.Plugin.SteamVRManus.Example.Systems
             subscriptionsPerEntity.Add(entity, subscriptions);
 
             var baseInteractable = entity.GetUnityComponent<IF_VR_Steam_Interactable>();
-            var exampleInteractable = entity.GetComponent<IF_VR_Glove_SteamVRManus_Example_Interactable>();
+            var exampleInteractable = entity.GetComponent<IF_VR_Glove_SteamVRHiFive_Example_Interactable>();
 
             exampleInteractable.GeneralText.text = "No Hand Hovering";
             exampleInteractable.HoveringText.text = "Hovering: False";

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8240660d2128c6c4eaad700fae250629, type: 3}
+  m_Name: IF_VR_Glove_SteamVRHiFive
+  m_EditorClassIdentifier: 
+  settings:
+    Name: IF Steam VR HiFive Glove Plugin Installer
+    Hi5RightHandPrefab: {fileID: 1154557225829108, guid: 91ca6133c21aaa949a8628cb04060c2d, type: 3}
+    Hi5LeftHandPrefab: {fileID: 1480425545615440, guid: e49828014851c414ca75a4202d23e9fd, type: 3}

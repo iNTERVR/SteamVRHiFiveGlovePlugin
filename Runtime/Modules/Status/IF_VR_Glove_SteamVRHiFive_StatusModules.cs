@@ -13,6 +13,7 @@ namespace InterVR.IF.VR.Glove.Plugin.SteamVRHiFive.Modules
                 container.Unbind<IF_VR_IGrabStatus>();
             }
             container.Bind<IF_VR_IGrabStatus, IF_VR_Glove_SteamVRHiFive_GrabStatus>();
+            container.Bind<IHI5Interface, HI5Interface>();
         }
     }
 }

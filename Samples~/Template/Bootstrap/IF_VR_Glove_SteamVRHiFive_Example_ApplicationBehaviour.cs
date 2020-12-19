@@ -3,15 +3,14 @@ using InterVR.IF.Installer;
 using InterVR.IF.Modules;
 using InterVR.IF.VR.Glove.Installer;
 using InterVR.IF.VR.Glove.Modules;
-using InterVR.IF.VR.Glove.Plugin.SteamVRManus.Modules;
+using InterVR.IF.VR.Glove.Plugin.SteamVRHiFive.Modules;
 using InterVR.IF.VR.Modules;
 using InterVR.IF.VR.Plugin.Steam.Modules;
 using UnityEngine;
 
-namespace InterVR.IF.VR.Glove.Plugin.SteamVRManus.Example
+namespace InterVR.IF.VR.Glove.Plugin.SteamVRHiFive.Example
 {
-    [DefaultExecutionOrder(-20000)]
-    public class IF_VR_Glove_SteamVRManus_Example_ApplicationBehaviour : IF_ApplicationBehaviour
+    public class IF_VR_Glove_SteamVRHiFive_Example_ApplicationBehaviour : IF_ApplicationBehaviour
     {
         protected override void BindSystems()
         {
@@ -30,8 +29,8 @@ namespace InterVR.IF.VR.Glove.Plugin.SteamVRManus.Example
                 "InterVR.IF.VR.Glove.Systems",
                 "InterVR.IF.VR.Glove.ViewResolvers");
             Container.BindApplicableSystems(
-                "InterVR.IF.VR.Glove.Plugin.SteamVRManus.Systems",
-                "InterVR.IF.VR.Glove.Plugin.SteamVRManus.ViewResolvers");
+                "InterVR.IF.VR.Glove.Plugin.SteamVRHiFive.Systems",
+                "InterVR.IF.VR.Glove.Plugin.SteamVRHiFive.ViewResolvers");
         }
 
         protected override void LoadModules()
@@ -46,8 +45,8 @@ namespace InterVR.IF.VR.Glove.Plugin.SteamVRManus.Example
             Container.LoadModule<IF_VR_Steam_ComponentBuilderModules>();
             Container.LoadModule<IF_VR_Steam_MessageToEventModules>();
             Container.LoadModule<IF_VR_Glove_InterfaceModules>();
-            Container.LoadModule<IF_VR_Glove_SteamVRManus_InterfaceModules>();
-            Container.LoadModule<IF_VR_Glove_SteamVRManus_StatusModules>();
+            Container.LoadModule<IF_VR_Glove_SteamVRHiFive_InterfaceModules>();
+            Container.LoadModule<IF_VR_Glove_SteamVRHiFive_StatusModules>();
         }
 
         protected override void LoadPlugins()
@@ -59,7 +58,7 @@ namespace InterVR.IF.VR.Glove.Plugin.SteamVRManus.Example
         {
             base.ApplicationStarted();
 
-            var settings = Container.Resolve<IF_VR_Glove_SteamVRManus_Example_Installer.Settings>();
+            var settings = Container.Resolve<IF_VR_Glove_SteamVRHiFive_Example_Installer.Settings>();
             var interSettings = Container.Resolve<IF_Installer.Settings>();
             Debug.Log($"settings.Name is {settings.Name} in {interSettings.Name}");
         }

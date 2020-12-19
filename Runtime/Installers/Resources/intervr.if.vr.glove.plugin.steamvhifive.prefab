@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1449065082320613366}
-  - component: {fileID: -7123359073546548771}
+  - component: {fileID: -5829501484679666056}
   m_Layer: 0
-  m_Name: intervr.if.vr.glove.plugin.steamvrmanus
+  m_Name: intervr.if.vr.glove.plugin.steamvhifive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-7123359073546548771
+--- !u!114 &-5829501484679666056
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,8 +40,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1712070030827417687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 353d99a68d995a84c804af32ff247fd0, type: 3}
+  m_Script: {fileID: 11500000, guid: 53fb135234e07be4faa83875f77df4b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   settings:
-  - {fileID: 11400000, guid: e6f0bb87dd401d2418d3ce26cf741859, type: 2}
+  - {fileID: 11400000, guid: f5ad0995402e30a498c5a5aa47bb9de7, type: 2}

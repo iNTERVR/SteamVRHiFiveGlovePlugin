@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b61bdc3f3e8eda8498d791b5a17e0150, type: 3}
-  m_Name: IF_VR_Glove_SteamVRManus_Example_Settings
+  m_Script: {fileID: 11500000, guid: cd63b6fc39c3bf949a549f059a62b753, type: 3}
+  m_Name: IF_VR_Glove_SteamVRHiFive_Example_Settings
   m_EditorClassIdentifier: 
   settings:
-    Name: IF Steam VR Manus Glove Plugin Example Installer
+    Name: IF Steam VR HiFive Glove Plugin Example Installer
+    HandYaw: 180
