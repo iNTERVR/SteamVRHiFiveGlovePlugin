@@ -5,7 +5,7 @@
 
 # 소개
 
-InterFramework(IF) Virtual Reality(VR) Steam VR HiFive Glove Plugin은 iNTERVR에서 [유니티]를 기반으로 하여 제작된 소프트웨어 개발 도구(SDK)입니다.
+InterFramework(IF) Virtual Reality(VR) Steam VR Noitem Hi5 Glove Plugin은 iNTERVR에서 [유니티]를 기반으로 하여 제작된 소프트웨어 개발 도구(SDK)입니다.
 
 > `2020.1.x` 버전에 맞춰서 제작되었습니다.
 
