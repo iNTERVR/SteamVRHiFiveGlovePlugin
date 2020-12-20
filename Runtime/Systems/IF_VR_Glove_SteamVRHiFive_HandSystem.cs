@@ -158,29 +158,86 @@ namespace InterVR.IF.VR.Glove.Plugin.SteamVRHiFive.Systems
 
         private Quaternion ToSteamVRHandSkeletonRight(Quaternion rot)
         {
+            var playerRot = IF_VR_Steam_Player.instance.transform.eulerAngles;
             Quaternion q1 = Quaternion.identity;
-            q1.Set(
-                newX: -rot.z,
-                newY: rot.y,
-                newZ: rot.x,
-                newW: rot.w
-                );
+            if (playerRot.y == 0)
+            {
+                q1.Set(
+                    newX: -rot.z,
+                    newY: rot.y,
+                    newZ: rot.x,
+                    newW: rot.w
+                    );
+            }
+            else if (playerRot.y == 90)
+            {
+                q1 = rot;
+            }
+            else if (playerRot.y == 180)
+            {
+                q1.Set(
+                    newX: rot.z,
+                    newY: rot.y,
+                    newZ: -rot.x,
+                    newW: rot.w
+                    );
+            }
+            else if (playerRot.y == 270)
+            {
+                q1.Set(
+                    newX: rot.x,
+                    newY: rot.y,
+                    newZ: rot.z,
+                    newW: -rot.w
+                    );
+            }
 
-            Quaternion q2 = Quaternion.Euler(new Vector3(0, 0, 90));
+            Quaternion q2 = Quaternion.Euler(new Vector3(0, playerRot.y, 90));
             return q1 * q2;
         }
 
         private Quaternion ToSteamVRHandSkeletonLeft(Quaternion rot)
         {
+            var playerRot = IF_VR_Steam_Player.instance.transform.eulerAngles;
             Quaternion q1 = Quaternion.identity;
-            q1.Set(
-                newX: -rot.z,
-                newY: -rot.y,
-                newZ: rot.x,
-                newW: -rot.w
-                );
+            if (playerRot.y == 0)
+            {
+                q1.Set(
+                    newX: rot.z,
+                    newY: rot.y,
+                    newZ: -rot.x,
+                    newW: rot.w
+                    );
+            }
+            else if (playerRot.y == 90)
+            {
+                q1.Set(
+                    newX: rot.x,
+                    newY: -rot.y,
+                    newZ: rot.z,
+                    newW: -rot.w
+                    );
+            }
+            else if (playerRot.y == 180)
+            {
+                q1.Set(
+                    newX: -rot.z,
+                    newY: rot.y,
+                    newZ: rot.x,
+                    newW: rot.w
+                    );
+            }
+            else if (playerRot.y == 270)
+            {
+                q1.Set(
+                    newX: rot.x,
+                    newY: -rot.y,
+                    newZ: rot.z,
+                    newW: rot.w
+                    );
+            }
 
-            Quaternion q2 = Quaternion.Euler(new Vector3(0, 0, -90));
+            Quaternion q2 = Quaternion.Euler(new Vector3(0, playerRot.y, -90));
             return q1 * q2;
         }
 
